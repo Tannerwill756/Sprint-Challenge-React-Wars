@@ -19,7 +19,7 @@ const StarWarsList = () => {
     return (
         <div className="charInfo">
             {char.map((e, i) => (
-                <StarWars key={i} results={e} name={e.name} gend={e.gender} status={e.status} species={e.species} />
+                <StarWars key={i} results={e} name={e.name} gend={e.gender} status={e.status} species={e.species} image={e.image}/>
             ))}
             
         </div>

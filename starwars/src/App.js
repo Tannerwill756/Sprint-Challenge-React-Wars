@@ -20,7 +20,7 @@ const App = () => {
 
   return (
     <ContainerStyle className="App">
-      <h1 className="Header">React Wars</h1>
+      <h1 className="Header">Rick and Morty</h1>
       <StarWarsList />
     </ContainerStyle>
   );
