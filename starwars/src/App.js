@@ -1,6 +1,14 @@
 import React from 'react';
 import './App.css';
 import StarWarsList from "./components/StarWarsList";
+import styled from "styled-components";
+
+
+const ContainerStyle = styled.div`
+  max-width:100%;
+  width:100%;
+`;
+
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -11,10 +19,10 @@ const App = () => {
   // sync up with, if any.
 
   return (
-    <div className="App">
+    <ContainerStyle className="App">
       <h1 className="Header">React Wars</h1>
       <StarWarsList />
-    </div>
+    </ContainerStyle>
   );
 }
 

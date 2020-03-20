@@ -6,7 +6,7 @@ const StarWarsList = () => {
 
     const [char, setChar] = useState([]);
     useEffect(() => {
-        axios.get('https://swapi.co/api/people/?format=json')
+        axios.get('https://rickandmortyapi.com/api/character/')
         .then( response => {
             console.log(response.data.results);
             setChar(response.data.results)
@@ -19,7 +19,7 @@ const StarWarsList = () => {
     return (
         <div className="charInfo">
             {char.map((e, i) => (
-                <StarWars key={i} results={e} name={e.name} gend={e.gender} eyeCol={e.eye_color} height={e.height} mass={e.mass}/>
+                <StarWars key={i} results={e} name={e.name} gend={e.gender} status={e.status} species={e.species} />
             ))}
             
         </div>
